@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using Vibration.Common;
+
+#if UNITY_ANDROID
 using Vibration.Android;
+#elif UNITY_IOS
 using Vibration.iOS;
+#endif
 
 namespace Vibration
 {
@@ -15,15 +19,16 @@ namespace Vibration
             switch (Application.platform)
             {
                 case RuntimePlatform.IPhonePlayer:
-                    _vibration = new IOSVibration();
-                    break;
-                
                 case RuntimePlatform.Android:
-                    _vibration = new AndroidVibration();
+                    _isSupported = true;
                     break;
             }
 
-            _isSupported = _vibration != null;
+#if UNITY_ANDROID
+            _vibration = new AndroidVibration();
+#elif UNITY_IOS
+            _vibration = new IOSVibration();
+#endif
         }
 
         public void Vibrate(Impact impact)
