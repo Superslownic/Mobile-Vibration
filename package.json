@@ -1,0 +1,15 @@
+{
+  "name": "com.superslownic.mobile-vibration",
+  "version": "1.0.0",
+  "displayName": "Mobile Vibration",
+  "description": "",
+  "unity": "2020.3",
+  "author": {
+    "name": "Daniil Noskov",
+    "email": "isuperslownic@gmail.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "dependencies": {
+  }
+}

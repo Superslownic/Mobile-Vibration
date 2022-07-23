@@ -1,0 +1,19 @@
+{
+    "name": "Vibration.iOS",
+    "rootNamespace": "Vibration.iOS",
+    "references": [
+        "Vibration.Common"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "iOS"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
