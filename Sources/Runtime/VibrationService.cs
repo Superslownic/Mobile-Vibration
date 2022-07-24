@@ -24,10 +24,14 @@ namespace Vibration
                     break;
             }
 
+#if!UNITY_EDITOR
+
 #if UNITY_ANDROID
             _vibration = new AndroidVibration();
 #elif UNITY_IOS
             _vibration = new IOSVibration();
+#endif
+            
 #endif
         }
 
