@@ -5,6 +5,7 @@
         "Vibration.Common"
     ],
     "includePlatforms": [
+        "Editor",
         "iOS"
     ],
     "excludePlatforms": [],
